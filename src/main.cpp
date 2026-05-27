@@ -51,7 +51,8 @@ void setup() {
   espNowHelper.registerModuleMessageHandler(handleShieldModuleMessage);
   espNowHelper.registerDateMessageHandler(handleTravelMessage);
 
-  testEffects();
+  // testEffects();
+  playTravel1Effect();
 }
 
 void loop() {
@@ -92,7 +93,7 @@ void handleTravelMessage(const DateMessage& msg) {
   Serial.printf("  Date: %02d/%02d/%04d\n", msg.month, msg.day, msg.year);
 
   if (msg.messageType == MSG_TYPE_DATA) {
-    playTravel1Effect();
+    playTravel2Effect();
   }
 }
 

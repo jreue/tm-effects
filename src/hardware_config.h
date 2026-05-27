@@ -8,4 +8,4 @@
 #define RX_PIN 16
 #define TX_PIN 17
 
-#define VOLUME_LEVEL 10  // Valid Range: 0-30
+#define VOLUME_LEVEL 20  // Valid Range: 0-30
